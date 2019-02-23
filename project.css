@@ -1,0 +1,34 @@
+
+.btn{
+    background-color: #FF5E3A;
+    border: none;
+}
+.btn:hover{
+    background-color: #FF5E3A !important;
+}
+
+.btn-primary:hover{
+    background-color: #FF3A5B !important;
+}
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle{
+    background-color: #FF5E3A;
+}
+
+section{
+    padding-left: 250px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+body{
+    background-color: #f4f4f4;
+    position: relative;
+}
+.btn-group{
+    position: absolute;
+    left: auto;
+    right: 100px;
+    top: 20px;
+}
