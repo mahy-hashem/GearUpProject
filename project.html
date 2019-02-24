@@ -17,12 +17,62 @@
 <body>
     <!-- Keep id top for back to top button -->
     <header id="top">
-        
+
+            
+            <h1 class="logo"> 
+                    <a href="project.html"> 
+                        <img src="https://static1.squarespace.com/static/560ad474e4b0ce89ae1f42db/t/5c437d50562fa759dd512234/1547926882425/ATC+LOGO-GREY.png"/>
+                        <span class="to-hide"> LOGO </span>
+                    </a> 
+                </h1>
+                <nav>
+                        <ul>
+                            <li><a href="#">New</a></li>
+                            <li><a href="#">Bags</a></li>
+                            <li><a href="#">Shoes</a></li>
+                            <li><a href="#">Sunglasses</a></li>
+                            <li class="sale"><a href="#">Sale</a></li>
+                            <li class="nav-item dropdown">
+                                    <a class="user nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      Hi, Username
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                      <a class="dropdown-item" href="#">My Account</a>
+                                      <a class="dropdown-item" href="#">Orders</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Logout</a>
+                                    </div>
+                            </li>
+                        </ul>
+                    </nav>
+            <div class="toolbar toolbar2">
+                <div class="search-bar input-group mb-3">   
+                        <span <label  class="to-hide" for="search"></label> </span>
+                        <input type="text" id="search" class="form-control" placeholder="Looking For..." aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <div class="input-group-append">
+                        <button <i class="fas fa-search"></i></button>
+                        </div>
+                </div>
+                <div class="cart dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-shopping-cart"></i>Cart <span class="badge badge-light">0</span>
+                        </button>
+                        <div class="dropdown-menu p-4 text-muted" style="max-width: 200px;">
+                                <p>
+                                  Some example text that's free-flowing within the dropdown menu.
+                                </p>
+                                <p class="mb-0">
+                                  And this is more example text.
+                                </p>
+                              </div>
+                </div>
+    
+            </div>
+
     </header>
-    <div class="btn-group">
+    <div class="filter btn-group">
         <button type="button" class="btn btn-secondary">Type</button>
-        <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference"
-            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <span class="sr-only">Toggle Dropdown</span>
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuReference">

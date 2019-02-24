@@ -1,4 +1,95 @@
 
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    font-family: 'Helvetica', sans-serif;
+    position: relative;
+}
+ /*hrader*/
+
+header{
+    background-color: white;
+    color: #212529;
+    position: relative;
+    width: 100%;
+
+}
+
+header a{
+    color: inherit;
+}
+
+h1{
+    margin: 0;
+}
+
+h1 img{
+    width: 20%;
+    padding-bottom: 20px;
+}
+
+
+.toolbar{
+    display: flex;
+    margin: 0 auto;
+    position: absolute;
+    top: 30%;
+    right: 2%;
+}
+
+header nav ul{
+    display: flex;
+    list-style: none;
+    margin:0;
+}
+header nav li{
+    padding-right: 40px;
+}
+
+header nav{
+    position: absolute;
+    top: 40px;
+    left: 300px;
+}
+
+.user{
+    padding: 0;
+    margin-left: 40px;
+}
+.sale{
+    color: red;
+}
+
+
+
+header nav a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+.search-bar{
+    width: 250px;
+    padding-right: 30px;
+}
+
+.cart{
+    margin-bottom: 20px;
+}
+
+.to-hide{
+    clip: rect(1px 1px 1px 1px);
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+}
+ /*body*/
+
+
 .btn{
     background-color: #FF5E3A;
     border: none;
@@ -15,10 +106,13 @@
 .btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle{
     background-color: #FF5E3A;
 }
+.filter{
+    padding-top: 120px;
+}
 
 section{
     padding-left: 250px;
-    padding-top: 100px;
+    padding-top: 80px;
     padding-bottom: 50px;
     text-align: center;
 }
