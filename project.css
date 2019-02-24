@@ -32,3 +32,44 @@ body{
     right: 100px;
     top: 20px;
 }
+
+/* for footer*/
+.footer-links li a{
+    color: #666666;
+}
+.text{
+    color: #666666;
+}
+
+.btn-color{
+    background: #FF5E3A;
+    color: white;
+}
+
+.btn-color2{
+    background: #FF3A5B;
+    color: white;
+}
+
+.toTop{
+    right: 0;
+    bottom: 100px;
+}
+
+.pink{
+    color:  #FF3A5B;
+}
+
+.social-links a:hover{
+    color: #FF5E3A;
+}
+
+.border-org{
+    border: 1px solid  #FF5E3A;
+    border-radius: 5px;
+}
+
+.newsletter{
+    width: 95%;
+    margin: 0 auto;
+}
