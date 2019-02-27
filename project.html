@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" 
-        crossorigin="anonymous">
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="project.css" rel="stylesheet" type="text/css" />
 </head>
 
@@ -18,168 +17,342 @@
     <!-- Keep id top for back to top button -->
     <header id="top">
 
-            
-            <h1 class="logo"> 
-                    <a href="project.html"> 
-                        <img src="https://static1.squarespace.com/static/560ad474e4b0ce89ae1f42db/t/5c437d50562fa759dd512234/1547926882425/ATC+LOGO-GREY.png"/>
-                        <span class="to-hide"> LOGO </span>
-                    </a> 
-                </h1>
-                <nav>
-                        <ul>
-                            <li><a href="#">New</a></li>
-                            <li><a href="#">Bags</a></li>
-                            <li><a href="#">Shoes</a></li>
-                            <li><a href="#">Sunglasses</a></li>
-                            <li class="sale"><a href="#">Sale</a></li>
-                            <li class="nav-item dropdown">
-                                    <a class="user nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                      Hi, Username
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                      <a class="dropdown-item" href="#">My Account</a>
-                                      <a class="dropdown-item" href="#">Orders</a>
-                                      <div class="dropdown-divider"></div>
-                                      <a class="dropdown-item" href="#">Logout</a>
-                                    </div>
-                            </li>
-                        </ul>
-                    </nav>
-            <div class="toolbar toolbar2">
-                <div class="search-bar input-group mb-3">   
-                        <span> <label  class="to-hide" for="search">Search</label> </span>
-                        <input type="text" id="search" class="form-control" placeholder="Looking For..." aria-label="Recipient's username" aria-describedby="button-addon2">
-                        <div class="input-group-append">
-                        <button><i class="fas fa-search"></i></button>
-                        </div>
-                </div>
-                <div class="cart dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fas fa-shopping-cart"></i>Cart <span class="badge badge-light">0</span>
-                        </button>
-                        <div class="dropdown-menu p-4 text-muted" style="max-width: 200px;">
-                                <p>
-                                  Some example text that's free-flowing within the dropdown menu.
-                                </p>
-                                <p class="mb-0">
-                                  And this is more example text.
-                                </p>
-                              </div>
-                </div>
-    
+
+        <h1 class="logo">
+            <a href="project.html">
+                <img
+                    src="https://static1.squarespace.com/static/560ad474e4b0ce89ae1f42db/t/5c437d50562fa759dd512234/1547926882425/ATC+LOGO-GREY.png" />
+                <span class="to-hide"> LOGO </span>
+            </a>
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="#">All Items</a></li>
+                <li class="nav-item dropdown">
+                    <a lass="user nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Bags</a></li>
+                <li><a href="#">Shoes</a></li>
+                <li><a href="#">Sunglasses</a></li>
+                <li class="sale"><a href="#">Sale</a></li>
+                <li class="nav-item dropdown">
+                    <a class="user nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Hi, Username
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">My Account</a>
+                        <a class="dropdown-item" href="#">Orders</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="toolbar toolbar2">
+
+            <div class="search-bar input-group mb-3">
+                <span> <label class="to-hide" for="search"></label> </span>
+                <form class="search-form">
+                    <input type="text" id="search" class="form-control" placeholder="Looking For..."
+                        aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <div class="input-group-append">
+
+                </form>
             </div>
+        </div>
+        <div class="cart dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-shopping-cart"></i>Cart <span class="badge badge-light">0</span>
+            </button>
+            <div class="dropdown-menu p-4 text-muted" style="max-width: 200px;">
+                <p>
+                    Some example text that's free-flowing within the dropdown menu.
+                </p>
+                <p class="mb-0">
+                    And this is more example text.
+                </p>
+            </div>
+        </div>
+
+        </div>
 
     </header>
+
+
     <div class="filter btn-group">
         <button type="button" class="btn btn-secondary">Type</button>
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
             <span class="sr-only">Toggle Dropdown</span>
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuReference">
-            <a class="dropdown-item" href="#">Crossbody Bags</a>
+            <a class="dropdown-item dropdown-bags" href="#">Bags</a>
             <a class="dropdown-item" href="#">Tote Bags</a>
             <a class="dropdown-item" href="#">Handbags</a>
             <a class="dropdown-item" href="#">Backpacks</a>
         </div>
     </div>
-    <section class="d-flex flex-row bd-highlight mb-3 align-content-stretch">
-        <div class="bag1 card p-2 bd-highlight" style="width: 18rem;">
-            <img src="https://www.parfois.com/dw/image/v2/BBKR_PRD/on/demandware.static/-/Sites-parfois-master-catalog/default/dw4e049c56/images/hi-res/182/54/162153_CA_2y.jpg?sw=561"
-                class="card-img-top" alt="Parfois Amber Cross Bag" title="Parfois Amber Cross Bag">
+
+
+    <section class="d-flex flex-row bd-highlight mb-3 align-content-stretch row1">
+        <div class="product1 card p-2 bd-highlight" style="width: 18rem;">
+            <img src=""
+                class="card-img-top" alt="" title="">
             <div class="card-body">
-                <h5 class="name card-title">Parfois Amber Cross Bag</h5>
-                <p class="price card-text">500 EGP</p>
-                <a href="https://www.parfois.com/en/eg/handbags/cross-bags/162153.html?dwvar_162153_size=M&dwvar_162153_color=CA_#cgid=&start=3&q=Amber%2BCross%2BBag&lang=en_EG"
+                <h5 class="name card-title"></h5>
+                <p class="price card-text"></p>
+                <a href=""
                     class="btn btn-primary stretched-link">View Details</a>
             </div>
         </div>
-        <div class="bag2 card p-2 bd-highlight" style="width: 18rem;">
-            <img src="https://www.parfois.com/dw/image/v2/BBKR_PRD/on/demandware.static/-/Sites-parfois-master-catalog/default/dwda95e28c/images/hi-res/191/56/165182_BK_1y.jpg?sw=561"
-                class="card-img-top" alt="Parfois Wheel Repeat Cross Bag" title="Parfois Wheel Repeat Cross Bag">
+        <div class="product2 card p-2 bd-highlight" style="width: 18rem;">
+            <img src=""
+                class="card-img-top" alt="" title="">
             <div class="card-body">
-                <h5 class="name card-title">Parfois Wheel Repeat Cross Bag</h5>
-                <p class="price card-text">549 EGP</p>
-                <a href="https://www.parfois.com/en/eg/handbags/cross-bags/165182.html?cgid=105&dwvar_165182_color=PR_&dwvar_165182_size=M"
+                <h5 class="name card-title"></h5>
+                <p class="price card-text"></p>
+                <a href=""
                     class="btn btn-primary stretched-link ">View Details</a>
             </div>
         </div>
-        <div class="bag3 card p-2 bd-highlight" style="width: 18rem;">
-            <img src="https://www.parfois.com/dw/image/v2/BBKR_PRD/on/demandware.static/-/Sites-parfois-master-catalog/default/dwcecd8232/images/hi-res/182/54/162148_BK_2y.jpg?sw=561"
-                class="card-img-top" alt="Parfois Amber Tote Bag" title="Parfois Amber Tote Bag">
+        <div class="product3 card p-2 bd-highlight" style="width: 18rem;">
+            <img src=""
+                class="card-img-top" alt="" title="">
             <div class="card-body">
-                <h5 class="name card-title">Parfois Amber Tote Bag</h5>
-                <p class="price card-text">729 EGP</p>
-                <a href="https://www.parfois.com/en/eg/handbags/totes/162148.html?cgid=107&dwvar_162148_size=S&dwvar_162148_color=PR_"
-                    class="btn btn-primary stretched-link ">View Details</a>
-            </div>
-        </div>
-    </section>
-    <section class="d-flex flex-row bd-highlight mb-3 align-content-stretch">
-        <div class="bag4 card p-2 bd-highlight" style="width: 18rem;">
-            <img src="https://d3qsystxi9mvxa.cloudfront.net/media/catalog/product/cache/28/thumbnail/300x385/9df78eab33525d08d6e5fb8d27136e95/2/0/2018-L7-CK2-80780710-B8-1.jpg"
-                class="card-img-top" alt="Charles & Keith Front Flap Crossbody Bag"
-                title="Charles & Keith Front Flap Crossbody Bag">
-            <div class="card-body">
-                <h5 class="name card-title">Charles & Keith Front Flap Crossbody Bag</h5>
-                <p class="price card-text">1000 EGP</p>
-                <a href="https://www.charleskeith.com/catalog/bags/bags-all/crossbody-bag/front-flap-crossbody-bag-black-textured-ck2-80780710.html"
-                    class="btn btn-primary stretched-link ">View Details</a>
-            </div>
-        </div>
-        <div class="bag5 card p-2 bd-highlight" style="width: 18rem;">
-            <img src="https://d3qsystxi9mvxa.cloudfront.net/media/catalog/product/cache/28/thumbnail/300x385/9df78eab33525d08d6e5fb8d27136e95/2/0/2018-L7-CK2-80700798-08-1_1.jpg"
-                class="card-img-top" alt="Charles & Keith Push Lock Front FLap Bag"
-                title="Charles & Keith Push Lock Front FLap Bag">
-            <div class="card-body">
-                <h5 class="name card-title">Charles & Keith Push Lock Front FLap Bag</h5>
-                <p class="price card-text">3000 EGP</p>
-                <a href="https://www.charleskeith.com/catalog/bags/bags-all/crossbody-bag/push-lock-front-flap-bag-gold-ck2-80700798.html"
-                    class="btn btn-primary stretched-link ">View Details</a>
-            </div>
-        </div>
-        <div class="bag6 card p-2 bd-highlight" style="width: 18rem;">
-            <img src="https://d3qsystxi9mvxa.cloudfront.net/media/catalog/product/cache/28/small_image/390x500/9df78eab33525d08d6e5fb8d27136e95/2/0/2019-L2-CK2-50780812-57-1.jpg"
-                class="card-img-top" alt="Charles & Keith Structured HandBag"
-                title="Charles & Keith Structured HandBag">
-            <div class="card-body">
-                <h5 class="name card-title">Charles & Keith Structured HandBag</h5>
-                <p class="price card-text">3800 EGP</p>
-                <a href="https://www.charleskeith.com/catalog/bags/bags-all/handbag/metal-edged-top-handle-bag-rose-gold-ck2-50780812.html"
+                <h5 class="name card-title"></h5>
+                <p class="price card-text"></p>
+                <a href=""
                     class="btn btn-primary stretched-link ">View Details</a>
             </div>
         </div>
     </section>
-    <section class="d-flex flex-row bd-highlight mb-3 align-content-stretch">
-        <div class="bag7 card p-2 bd-highlight" style="width: 18rem;">
-            <img src="https://guesseu.scene7.com/is/image/GuessEU/HWIMCBP9136-WML?wid=540&fmt=jpeg&qlt=70&op_sharpen=0&op_usm=1.0,1.0,5,0&iccEmbed=0"
-                class="card-img-top" alt="Guess Color Block Bag" title="Guess Color Block Bag">
+    <section class="d-flex flex-row bd-highlight mb-3 align-content-stretch row2">
+        <div class="product4 card p-2 bd-highlight" style="width: 18rem;">
+            <img src=""
+                class="card-img-top" alt=""
+                title="">
             <div class="card-body">
-                <h5 class="name card-title">Guess Color Block Bag</h5>
-                <p class="price card-text">2000 EGP</p>
-                <a href="https://www.guess.eu/en/catalog/view/women/bags/color-block-bag/hwimcbp9136"
+                <h5 class="name card-title"></h5>
+                <p class="price card-text"></p>
+                <a href=""
                     class="btn btn-primary stretched-link ">View Details</a>
             </div>
         </div>
-        <div class="bag8 card p-2 bd-highlight" style="width: 18rem;">
-            <img src="https://guesseu.scene7.com/is/image/GuessEU/92G9169091Z-JBLK?wid=540&fmt=jpeg&qlt=70&op_sharpen=0&op_usm=1.0,1.0,5,0&iccEmbed=0"
-                class="card-img-top" alt="Guess Marciano Leather Crossbody Bag"
-                title="Guess Marciano Leather Crossbody Bag">
+        <div class="product5 card p-2 bd-highlight" style="width: 18rem;">
+            <img src="" class="card-img-top" alt="" title="">
             <div class="card-body">
-                <h5 class="name card-title">Guess Marciano Leather Crossbody Bag</h5>
-                <p class="price card-text">4000 EGP</p>
-                <a href="https://www.guess.eu/en/catalog/view/women/bags/marciano-leather-crossbody-bag/92g9169091z"
+                <h5 class="name card-title"></h5>
+                <p class="price card-text"></p>
+                <a href="" class="btn btn-primary stretched-link ">View Details</a>
+            </div>
+        </div>
+        <div class="product6 card p-2 bd-highlight" style="width: 18rem;">
+            <img src="" class="card-img-top" alt="" title="">
+            <div class="card-body">
+                <h5 class="name card-title"></h5>
+                <p class="price card-text"></p>
+                <a href="" class="btn btn-primary stretched-link ">View Details</a>
+            </div>
+        </div>
+    </section>
+    <section class=" d-flex flex-row bd-highlight mb-3 align-content-stretch row3">
+        <div class=" product7 card p-2 bd-highlight" style="width: 18rem;">
+            <img src="" class="card-img-top" alt="" title="">
+            <div class="card-body">
+                <h5 class="name card-title"></h5>
+                <p class="price card-text"></p>
+                <a href="" class="btn btn-primary stretched-link ">View Details</a>
+            </div>
+        </div>
+        <div class=" product8 card p-2 bd-highlight" style="width: 18rem;">
+            <img src="" class="card-img-top" alt="" title="">
+            <div class="card-body">
+                <h5 class="name card-title"></h5>
+                <p class="price card-text"></p>
+                <a href="" class="btn btn-primary stretched-link ">View Details</a>
+            </div>
+        </div>
+        <div class="product9 card p-2 bd-highlight" style="width: 18rem;">
+            <img src="" class="card-img-top" alt="" title="">
+            <div class="card-body">
+                <h5 class="name card-title"></h5>
+                <p class="price card-text"></p>
+                <a href="" class="btn btn-primary stretched-link ">View Details</a>
+            </div>
+        </div>
+    </section>
+    <section class="d-flex flex-row bd-highlight mb-3 align-content-stretch row4">
+        <div class="product10 card p-2 bd-highlight" style="width: 18rem;">
+            <img src=""
+                class="card-img-top" alt="" title="">
+            <div class="card-body">
+                <h5 class="name card-title"></h5>
+                <p class="price card-text"></p>
+                <a href=""
+                    class="btn btn-primary stretched-link">View Details</a>
+            </div>
+        </div>
+        <div class="product11 card p-2 bd-highlight" style="width: 18rem;">
+            <img src=""
+                class="card-img-top" alt="" title="">
+            <div class="card-body">
+                <h5 class="name card-title"></h5>
+                <p class="price card-text"></p>
+                <a href=""
                     class="btn btn-primary stretched-link ">View Details</a>
             </div>
         </div>
-        <div class="bag9 card p-2 bd-highlight" style="width: 18rem;">
-            <img src="https://guesseu.scene7.com/is/image/GuessEU/HWJQ7184330-BLA?wid=540&fmt=jpeg&qlt=70&op_sharpen=0&op_usm=1.0,1.0,5,0&iccEmbed=0"
-                class="card-img-top" alt="Guess Urban Chic Large Logo Print Backpack"
-                title="Guess Urban Chic Large Logo Print Backpack">
+        <div class="product12 card p-2 bd-highlight" style="width: 18rem;">
+            <img src=""
+                class="card-img-top" alt="" title="">
             <div class="card-body">
-                <h5 class="name card-title">Guess Urban Chic Large Logo Print Backpack</h5>
-                <p class="price card-text">3500 EGP</p>
-                <a href="https://www.guess.eu/en/catalog/view/women/bags/backpacks/urban-chic-large-logo-print-backpack/hwjq7184330"
+                <h5 class="name card-title"></h5>
+                <p class="price card-text"></p>
+                <a href=""
                     class="btn btn-primary stretched-link ">View Details</a>
+            </div>
+        </div>
+    </section>
+    <section class="d-flex flex-row bd-highlight mb-3 align-content-stretch row5">
+        <div class="product13 card p-2 bd-highlight" style="width: 18rem;">
+            <img src=""
+                class="card-img-top" alt=""
+                title="">
+            <div class="card-body">
+                <h5 class="name card-title"></h5>
+                <p class="price card-text"></p>
+                <a href=""
+                    class="btn btn-primary stretched-link ">View Details</a>
+            </div>
+        </div>
+        <div class="product14 card p-2 bd-highlight" style="width: 18rem;">
+            <img src="" class="card-img-top" alt="" title="">
+            <div class="card-body">
+                <h5 class="name card-title"></h5>
+                <p class="price card-text"></p>
+                <a href="" class="btn btn-primary stretched-link ">View Details</a>
+            </div>
+        </div>
+        <div class="product15 card p-2 bd-highlight" style="width: 18rem;">
+            <img src="" class="card-img-top" alt="" title="">
+            <div class="card-body">
+                <h5 class="name card-title"></h5>
+                <p class="price card-text"></p>
+                <a href="" class="btn btn-primary stretched-link ">View Details</a>
+            </div>
+        </div>
+    </section>
+    <section class=" d-flex flex-row bd-highlight mb-3 align-content-stretch row6">
+        <div class=" product16 card p-2 bd-highlight" style="width: 18rem;">
+            <img src="" class="card-img-top" alt="" title="">
+            <div class="card-body">
+                <h5 class="name card-title"></h5>
+                <p class="price card-text"></p>
+                <a href="" class="btn btn-primary stretched-link ">View Details</a>
+            </div>
+        </div>
+        <div class=" product17 card p-2 bd-highlight" style="width: 18rem;">
+            <img src="" class="card-img-top" alt="" title="">
+            <div class="card-body">
+                <h5 class="name card-title"></h5>
+                <p class="price card-text"></p>
+                <a href="" class="btn btn-primary stretched-link ">View Details</a>
+            </div>
+        </div>
+        <div class="product18 card p-2 bd-highlight" style="width: 18rem;">
+            <img src="" class="card-img-top" alt="" title="">
+            <div class="card-body">
+                <h5 class="name card-title"></h5>
+                <p class="price card-text"></p>
+                <a href="" class="btn btn-primary stretched-link ">View Details</a>
+            </div>
+        </div>
+    </section>
+    <section class="d-flex flex-row bd-highlight mb-3 align-content-stretch row7">
+        <div class="product19 card p-2 bd-highlight" style="width: 18rem;">
+            <img src=""
+                class="card-img-top" alt="" title="">
+            <div class="card-body">
+                <h5 class="name card-title"></h5>
+                <p class="price card-text"></p>
+                <a href=""
+                    class="btn btn-primary stretched-link">View Details</a>
+            </div>
+        </div>
+        <div class="product20 card p-2 bd-highlight" style="width: 18rem;">
+            <img src=""
+                class="card-img-top" alt="" title="">
+            <div class="card-body">
+                <h5 class="name card-title"></h5>
+                <p class="price card-text">/p>
+                <a href=""
+                    class="btn btn-primary stretched-link ">View Details</a>
+            </div>
+        </div>
+        <div class="product21 card p-2 bd-highlight" style="width: 18rem;">
+            <img src=""
+                class="card-img-top" alt="" title="">
+            <div class="card-body">
+                <h5 class="name card-title"></h5>
+                <p class="price card-text"></p>
+                <a href=""
+                    class="btn btn-primary stretched-link ">View Details</a>
+            </div>
+        </div>
+    </section>
+    <section class="d-flex flex-row bd-highlight mb-3 align-content-stretch row8">
+        <div class="product22 card p-2 bd-highlight" style="width: 18rem;">
+            <img src=""
+                class="card-img-top" alt=""
+                title="">
+            <div class="card-body">
+                <h5 class="name card-title"></h5>
+                <p class="price card-text"></p>
+                <a href=""
+                    class="btn btn-primary stretched-link ">View Details</a>
+            </div>
+        </div>
+        <div class="product23 card p-2 bd-highlight" style="width: 18rem;">
+            <img src="" class="card-img-top" alt="" title="">
+            <div class="card-body">
+                <h5 class="name card-title"></h5>
+                <p class="price card-text"></p>
+                <a href="" class="btn btn-primary stretched-link ">View Details</a>
+            </div>
+        </div>
+        <div class="product24 card p-2 bd-highlight" style="width: 18rem;">
+            <img src="" class="card-img-top" alt="" title="">
+            <div class="card-body">
+                <h5 class="name card-title"></h5>
+                <p class="price card-text"></p>
+                <a href="" class="btn btn-primary stretched-link ">View Details</a>
+            </div>
+        </div>
+    </section>
+    <section class=" d-flex flex-row bd-highlight mb-3 align-content-stretch row9">
+        <div class=" product25 card p-2 bd-highlight" style="width: 18rem;">
+            <img src="" class="card-img-top" alt="" title="">
+            <div class="card-body">
+                <h5 class="name card-title"></h5>
+                <p class="price card-text"></p>
+                <a href="" class="btn btn-primary stretched-link ">View Details</a>
+            </div>
+        </div>
+        <div class=" product26 card p-2 bd-highlight" style="width: 18rem;">
+            <img src="" class="card-img-top" alt="" title="">
+            <div class="card-body">
+                <h5 class="name card-title"></h5>
+                <p class="price card-text"></p>
+                <a href="" class="btn btn-primary stretched-link ">View Details</a>
+            </div>
+        </div>
+        <div class="product27 card p-2 bd-highlight" style="width: 18rem;">
+            <img src="" class="card-img-top" alt="" title="">
+            <div class="card-body">
+                <h5 class="name card-title"></h5>
+                <p class="price card-text"></p>
+                <a href="" class="btn btn-primary stretched-link ">View Details</a>
             </div>
         </div>
     </section>
@@ -190,46 +363,48 @@
         <div class="newsletter bg-light pink d-flex border-org justify-content-center mb-2">
             <h2 class="p-1 justify-content-center">Subscribe to our newsletter</h2>
             <div class="form-group col-lg-4 form-inline my-2 justify-content-center">
-            <form action="/new" method="GET">
-                <input type="email" class="form-control" placeholder="email@email.com" id="email" />
-                <button type="submit" class="btn btn-color2 ">Subscribe</button>
-            </form>
+                <form action="/new" method="GET">
+                    <input type="email" class="form-control" placeholder="email@email.com" id="email" />
+                    <button type="submit" class="btn btn-color2 ">Subscribe</button>
+                </form>
             </div>
         </div>
-       
-    <div class="container-fluid bg-white d-flex flex-wrap flex-column">
-       <div class="d-flex" >
-            <div class="footer-links d-flex flex-grow-1 my-1">
-                <ul class="list-unstyled">
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Contact us</a></li>
-                    <li><a href="#">Shipping Info</a></li>
-                    <li><a href="#">Terms & Conditions</a></li>
-                    <li><a href="#">Help</a></li>
-                </ul>
-            </div>
-            <div class="customer-service  align-self-start mt-1">
-                <button class="btn btn-white d-inline-flex justify-content-end btn-color" >
-                    <i class="fas fa-headset mr-1 mt-1"></i>
-                    Contact customer support
-                </button>
-            </div>
-        </div>
-        <div class="d-flex justify-content-between">
-            <div class="social-links d-flex text">
-                <h3 class="mr-3 pink">Check out our Social Media</h3>
-                <div class="d-flex ml-1">
-                <a class="text mr-3" href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
-                <a class="text mr-3" href="https://twitter.com"><i class="fab fa-twitter"></i></a>
-                <a class="text mr-3" href="https://instagram.com"><i class="fab fa-instagram"></i></a>
-                <a class="text mr-3" href="https://www.youtube.com/channel/UC-lHJZR3Gqxm24_Vd_AJ5Yw?sub_confirmation=1"><i class="fab fa-youtube"></i></a>
+
+        <div class="container-fluid bg-white d-flex flex-wrap flex-column">
+            <div class="d-flex">
+                <div class="footer-links d-flex flex-grow-1 my-1">
+                    <ul class="list-unstyled">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </div>
+                <div class="customer-service  align-self-start mt-1">
+                    <button class="btn btn-white d-inline-flex justify-content-end btn-color">
+                        <i class="fas fa-headset mr-1 mt-1"></i>
+                        Contact customer support
+                    </button>
                 </div>
             </div>
-        <div class="copyright d-flex mt-3">
-            <p class="mb-0 text ">Copyright © 2017 Name. All rights reserved.</p>
+            <div class="d-flex justify-content-between">
+                <div class="social-links d-flex text">
+                    <h3 class="mr-3 pink">Check out our Social Media</h3>
+                    <div class="d-flex ml-1">
+                        <a class="text mr-3" href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+                        <a class="text mr-3" href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                        <a class="text mr-3" href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                        <a class="text mr-3"
+                            href="https://www.youtube.com/channel/UC-lHJZR3Gqxm24_Vd_AJ5Yw?sub_confirmation=1"><i
+                                class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="copyright d-flex mt-3">
+                    <p class="mb-0 text ">Copyright © 2017 Name. All rights reserved.</p>
+                </div>
+            </div>
         </div>
-        </div>
-    </div>
     </footer>
 
 
@@ -238,9 +413,7 @@
 
 
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
@@ -248,6 +421,10 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
+
+
+    <script src="products.js"></script>
+    <script src="project.js"></script>
 </body>
 
 </html>
