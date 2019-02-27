@@ -130,6 +130,7 @@ body{
 /* for footer*/
 .footer-links li a{
     color: #666666;
+    margin-right: 70px;
 }
 .text{
     color: #666666;
