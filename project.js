@@ -26,18 +26,6 @@ function showCards(productArr) {
 
 /* Use only the functions below*/
 
-//Filter by the type of product ("bags, "shoes", "sunglasses")
-function filterType(products, type) {
-    productType = [];
-    if (type == "bags")
-        productType = products[0];
-    else if (type == "shoes")
-        productType = products[1];
-    else if (type == "sunglasses")
-        productType = products[2];
-
-    showCards(productType)
-}
 
 //Filters by category (as they are in the products.js file)
 function filterCategory(products, category) {
@@ -87,30 +75,42 @@ function listIncludes(list, str){
 }
 
 //Constructing the filtering dropdown menu
-function createFilteringMenu(products){
+function createFilteringMenu(products) {
     var button, category;
     var buttons = [];
-    for(var i=0; i<products.length; i++)
-    {
-        for(var j=0; j<products[i].length; j++)
-        {
+    for (var i = 0; i < products.length; i++) {
+        var types = []
+        for (var j = 0; j < products[i].length; j++) {
             category = products[i][j].category;
-            if(!listIncludes(buttons, category))
-            {
+            if (!listIncludes(types, category)) {
                 button = document.createElement("button");
                 $(button).addClass("dropdown-item");
                 $(button).addClass(category);
                 $(button).text(category);
-                $(".filter .dropdown-menu").append(button);
-                buttons.push(button);
+                types.push(button);
             }
         }
+        buttons.push(types);
     }
+    productsString.forEach(function(e){
+        var header = document.createElement("h6");
+        $(header).addClass("dropdown-header");
+        $(header).addClass("dropdown-title-"+e);
+        $(header).text(e);
+        $(header).css("text-transform","capitalize");
+        $(".filter .dropdown-menu").append(header);           
+    })
 
-    buttons.forEach(function(button) {
-        button.addEventListener('click', function() {
-            filterCategory(products, $(button).text());
-        });
+    for(var i =0; i<buttons.length; i++){
+        buttons[i].forEach(function (button) {
+            $(".dropdown-title-"+productsString[i]).append(button);
+            button.addEventListener('click', function () {
+                filterCategory(products, $(button).text());
+            });
+        })
+    }
+    buttons.forEach(function (type) {   
+        
     });
 }
 
@@ -119,17 +119,44 @@ function createFilteringMenu(products){
     filterType(products, "bags")
 });*/
 
+// Back to top event
+$(window).scroll(function(){
+    if($(window).scrollTop()> 300){
+         $(".toTop").fadeIn(200);
+    }else if($(window).scrollTop()<=300){
+        $(".toTop").fadeOut(100);
+    }
+});
+
+
+
 $(".search-form").on("submit", function (s) {
     s.preventDefault();
     var searchQuery = $("#search").val();
     search(products, searchQuery);
-    console.log("submittt");
 })
 
 // Page load
 showAll(products);
 createFilteringMenu(products);
 
-// FEATURE NOT IMPLEMENTED
-// 3OMAL YASHTAGHALOON
-//populateDropdown(categories)
+// Navbar links
+
+
+$(".nav-allItems").click(function() {
+    showAll(products)
+    
+})
+
+$(".nav-bags").click(function() {
+    showCards(bags);
+});
+
+
+$(".nav-shoes").click(function(){
+    showCards(shoes);
+})
+
+$(".nav-sunglasses").click(function() {
+    showCards(sunglasses);
+})

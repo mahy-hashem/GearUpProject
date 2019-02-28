@@ -60,7 +60,7 @@ var bags = [
         'id': 'bag8',
         'src': 'https://guesseu.scene7.com/is/image/GuessEU/92G9169091Z-JBLK?wid=540&fmt=jpeg&qlt=70&op_sharpen=0&op_usm=1.0,1.0,5,0&iccEmbed=0',
         'name': 'Guess Marciano Leather Crossbody Bag',
-        'category': 'Handbags',
+        'category': 'Crossbody Bags',
         'price': 4000,
         'href': 'https://www.guess.eu/en/catalog/view/women/bags/marciano-leather-crossbody-bag/92g9169091z'
     },
@@ -225,3 +225,4 @@ var sunglasses = [
 ]
 
 var products = [bags, shoes, sunglasses];
+var productsString = ["bags","shoes","sunglasses"];
