@@ -78,46 +78,49 @@ function search(products, key) {
     showCards(filteredItems);
 }
 
+function listIncludes(list, str){
+    for(var i=0; i<list.length; i++){
+        if($(list[i]).hasClass(str))
+            return true; 
+    }
+    return false;
+}
+
+//Constructing the filtering dropdown menu
+function createFilteringMenu(products){
+    var button, category;
+    var buttons = [];
+    for(var i=0; i<products.length; i++)
+    {
+        for(var j=0; j<products[i].length; j++)
+        {
+            category = products[i][j].category;
+            if(!listIncludes(buttons, category))
+            {
+                button = document.createElement("button");
+                $(button).addClass("dropdown-item");
+                $(button).addClass(category);
+                $(button).text(category);
+                $(".filter .dropdown-menu").append(button);
+                buttons.push(button);
+            }
+        }
+    }
+
+    buttons.forEach(function(button) {
+        button.addEventListener('click', function() {
+            filterCategory(products, $(button).text());
+        });
+    });
+}
+
 //Listeners & Filters
 /*$(".dropdown-bags").on("click", function (e) {
     filterType(products, "bags")
 });*/
 
-$('.filter button').click(function (e) {
-    switch(e.currentTarget.id){
-        case "1":
-            filterType(products, "bags");
-            break;
-        case "2":
-            filterCategory(products, "Crossbody Bags");
-            break;
-        case "3":
-            filterCategory(products, "Tote Bags");
-            break;
-        case "4":
-            filterCategory(products, "Handbags");
-            break;
-        case "5":
-            filterCategory(products, "Backpack");
-            break;
-        case "6":
-            filterType(products, "shoes");
-            break;            
-        case "7":
-            filterCategory(products, "Flat");
-            break;            
-        case "8":
-            filterCategory(products, "Heels");
-            break;            
-        case "9":
-            filterType(products, "sunglasses");
-            break;
-        default:
-         console.log("default");
-    }
-})
-
 $(".search-form").on("submit", function (s) {
+    s.preventDefault();
     var searchQuery = $("#search").val();
     search(products, searchQuery);
     console.log("submittt");
@@ -125,7 +128,8 @@ $(".search-form").on("submit", function (s) {
 
 // Page load
 showAll(products);
+createFilteringMenu(products);
 
 // FEATURE NOT IMPLEMENTED
 // 3OMAL YASHTAGHALOON
-populateDropdown(categories)
+//populateDropdown(categories)
