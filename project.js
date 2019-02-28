@@ -79,9 +79,43 @@ function search(products, key) {
 }
 
 //Listeners & Filters
-$(".dropdown-bags").on("click", function (e) {
+/*$(".dropdown-bags").on("click", function (e) {
     filterType(products, "bags")
-});
+});*/
+
+$('.filter button').click(function (e) {
+    switch(e.currentTarget.id){
+        case "1":
+            filterType(products, "bags");
+            break;
+        case "2":
+            filterCategory(products, "Crossbody Bags");
+            break;
+        case "3":
+            filterCategory(products, "Tote Bags");
+            break;
+        case "4":
+            filterCategory(products, "Handbags");
+            break;
+        case "5":
+            filterCategory(products, "Backpack");
+            break;
+        case "6":
+            filterType(products, "shoes");
+            break;            
+        case "7":
+            filterCategory(products, "Flat");
+            break;            
+        case "8":
+            filterCategory(products, "Heels");
+            break;            
+        case "9":
+            filterType(products, "sunglasses");
+            break;
+        default:
+         console.log("default");
+    }
+})
 
 $(".search-form").on("submit", function (s) {
     var searchQuery = $("#search").val();

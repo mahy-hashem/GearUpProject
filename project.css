@@ -127,6 +127,10 @@ body{
     top: 20px;
 }
 
+.inner-list{
+    text-indent: 20px;
+}
+
 /* for footer*/
 .footer-links li a{
     color: #666666;
