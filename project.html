@@ -16,60 +16,87 @@
 <body>
     <!-- Keep id top for back to top button -->
     <header id="top">
+        <div class="logo-header">
+            <h1 class="logo">
+                <a href="project.html">
+                    <img
+                        src="https://static1.squarespace.com/static/560ad474e4b0ce89ae1f42db/t/5c437d50562fa759dd512234/1547926882425/ATC+LOGO-GREY.png" />
+                    <span class="to-hide"> LOGO </span>
+                </a>
+            </h1>
 
 
-        <h1 class="logo">
-            <a href="project.html">
-                <img
-                    src="https://static1.squarespace.com/static/560ad474e4b0ce89ae1f42db/t/5c437d50562fa759dd512234/1547926882425/ATC+LOGO-GREY.png" />
-                <span class="to-hide"> LOGO </span>
-            </a>
-        </h1>
-        <div class="header-menu d-flex">
+            <div class="user-cart">
+                <ul class="user">
+                    <li class="nav-item dropdown ">
+                        <a class="user nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Hi, Username
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">My Account</a>
+                            <a class="dropdown-item" href="#">Orders</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Logout</a>
+                        </div>
+                    </li>
+                </ul>
+            
+                <div class="cart">
+                    <a class="btn" role="button"><i class="fas fa-shopping-cart"></i>Cart <span class="badge badge-light">0</span></a>
+                </div>
+            </div>
+         </div>
+
+        <div class="d-flex ">
+
+            
+
+            <div class="d-flex header-top">
+            
+                <div class="search-bar input-group mb-3">
+                    <span> <label class="to-hide" for="search"></label> </span>
+                    <form class="search-form ">
+                        <input type="text" id="search" class="form-control search-size" placeholder="Looking For..."
+                            aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <div class="input-group-append">
+            
+                    </form>
+                </div>
+            </div>
+
+            
+
+        </div>
+
+        
+
+
+
+
         <nav>
             <ul>
                 <li><a  class="nav-allItems"  role="button" >All Items</a></li>
                 <li><a class="nav-bags" role="button" >Bags</a></li>
                 <li><a class="nav-shoes" role="button" >Shoes</a></li>
                 <li><a class="nav-sunglasses" role="button" >Sunglasses</a></li>
-                <li class="nav-item dropdown">
-                    <a class="user nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Hi, Username
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">My Account</a>
-                        <a class="dropdown-item" href="#">Orders</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Logout</a>
-                    </div>
-                </li>
+                
             </ul>
         </nav>
-        <div class="toolbar toolbar2">
 
-            <div class="search-bar input-group mb-3">
-                <span> <label class="to-hide" for="search"></label> </span>
-                <form class="search-form">
-                    <input type="text" id="search" class="form-control" placeholder="Looking For..."
-                        aria-label="Recipient's username" aria-describedby="button-addon2">
-                    <div class="input-group-append">
+            
 
-                </form>
-            </div>
-        </div>
-        <div class="cart">
-                <i class="fas fa-shopping-cart"></i>Cart <span class="badge badge-light">0</span>
-            </div>
-        </div>
 
-        </div>
-    </div>
+           
+
+        
+   
     
 
     </header>
 
-    <div class="body" >
+
+<div class="body container">
 
     <div class="filter btn-group">
         <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -80,6 +107,7 @@
         </div>
     </div>
 
+    
     <section class="d-flex flex-row bd-highlight mb-3 align-content-stretch row1">
         <div class="product1 card p-2 bd-highlight" style="width: 18rem;">
             <img src=""
@@ -228,120 +256,123 @@
             </div>
         </div>
     </section>
-    <section class=" d-flex flex-row bd-highlight mb-3 align-content-stretch row6">
-        <div class=" product16 card p-2 bd-highlight" style="width: 18rem;">
-            <img src="" class="card-img-top" alt="" title="">
-            <div class="card-body">
-                <h5 class="name card-title"></h5>
-                <p class="price card-text"></p>
-                <a href="" class="btn btn-primary stretched-link ">View Details</a>
+        <section class=" d-flex flex-row bd-highlight mb-3 align-content-stretch row6">
+            <div class=" product16 card p-2 bd-highlight" style="width: 18rem;">
+                <img src="" class="card-img-top" alt="" title="">
+                <div class="card-body">
+                    <h5 class="name card-title"></h5>
+                    <p class="price card-text"></p>
+                    <a href="" class="btn btn-primary stretched-link ">View Details</a>
+                </div>
             </div>
-        </div>
-        <div class=" product17 card p-2 bd-highlight" style="width: 18rem;">
-            <img src="" class="card-img-top" alt="" title="">
-            <div class="card-body">
-                <h5 class="name card-title"></h5>
-                <p class="price card-text"></p>
-                <a href="" class="btn btn-primary stretched-link ">View Details</a>
+            <div class=" product17 card p-2 bd-highlight" style="width: 18rem;">
+                <img src="" class="card-img-top" alt="" title="">
+                <div class="card-body">
+                    <h5 class="name card-title"></h5>
+                    <p class="price card-text"></p>
+                    <a href="" class="btn btn-primary stretched-link ">View Details</a>
+                </div>
             </div>
-        </div>
-        <div class="product18 card p-2 bd-highlight" style="width: 18rem;">
-            <img src="" class="card-img-top" alt="" title="">
-            <div class="card-body">
-                <h5 class="name card-title"></h5>
-                <p class="price card-text"></p>
-                <a href="" class="btn btn-primary stretched-link ">View Details</a>
+            <div class="product18 card p-2 bd-highlight" style="width: 18rem;">
+                <img src="" class="card-img-top" alt="" title="">
+                <div class="card-body">
+                    <h5 class="name card-title"></h5>
+                    <p class="price card-text"></p>
+                    <a href="" class="btn btn-primary stretched-link ">View Details</a>
+                </div>
             </div>
-        </div>
-    </section>
-    <section class="d-flex flex-row bd-highlight mb-3 align-content-stretch row7">
-        <div class="product19 card p-2 bd-highlight" style="width: 18rem;">
-            <img src=""
-                class="card-img-top" alt="" title="">
-            <div class="card-body">
-                <h5 class="name card-title"></h5>
-                <p class="price card-text"></p>
-                <a href=""
-                    class="btn btn-primary stretched-link">View Details</a>
+        </section>
+        <section class="d-flex flex-row bd-highlight mb-3 align-content-stretch row7">
+            <div class="product19 card p-2 bd-highlight" style="width: 18rem;">
+                <img src=""
+                    class="card-img-top" alt="" title="">
+                <div class="card-body">
+                    <h5 class="name card-title"></h5>
+                    <p class="price card-text"></p>
+                    <a href=""
+                        class="btn btn-primary stretched-link">View Details</a>
+                </div>
             </div>
-        </div>
-        <div class="product20 card p-2 bd-highlight" style="width: 18rem;">
-            <img src=""
-                class="card-img-top" alt="" title="">
-            <div class="card-body">
-                <h5 class="name card-title"></h5>
-                <p class="price card-text"></p>
-                <a href=""
-                    class="btn btn-primary stretched-link ">View Details</a>
+            <div class="product20 card p-2 bd-highlight" style="width: 18rem;">
+                <img src=""
+                    class="card-img-top" alt="" title="">
+                <div class="card-body">
+                    <h5 class="name card-title"></h5>
+                    <p class="price card-text"></p>
+                    <a href=""
+                        class="btn btn-primary stretched-link ">View Details</a>
+                </div>
             </div>
-        </div>
-        <div class="product21 card p-2 bd-highlight" style="width: 18rem;">
-            <img src=""
-                class="card-img-top" alt="" title="">
-            <div class="card-body">
-                <h5 class="name card-title"></h5>
-                <p class="price card-text"></p>
-                <a href=""
-                    class="btn btn-primary stretched-link ">View Details</a>
+            <div class="product21 card p-2 bd-highlight" style="width: 18rem;">
+                <img src=""
+                    class="card-img-top" alt="" title="">
+                <div class="card-body">
+                    <h5 class="name card-title"></h5>
+                    <p class="price card-text"></p>
+                    <a href=""
+                        class="btn btn-primary stretched-link ">View Details</a>
+                </div>
             </div>
-        </div>
-    </section>
-    <section class="d-flex flex-row bd-highlight mb-3 align-content-stretch row8">
-        <div class="product22 card p-2 bd-highlight" style="width: 18rem;">
-            <img src=""
-                class="card-img-top" alt=""
-                title="">
-            <div class="card-body">
-                <h5 class="name card-title"></h5>
-                <p class="price card-text"></p>
-                <a href=""
-                    class="btn btn-primary stretched-link ">View Details</a>
+        </section>
+        <section class="d-flex flex-row bd-highlight mb-3 align-content-stretch row8">
+            <div class="product22 card p-2 bd-highlight" style="width: 18rem;">
+                <img src=""
+                    class="card-img-top" alt=""
+                    title="">
+                <div class="card-body">
+                    <h5 class="name card-title"></h5>
+                    <p class="price card-text"></p>
+                    <a href=""
+                        class="btn btn-primary stretched-link ">View Details</a>
+                </div>
             </div>
-        </div>
-        <div class="product23 card p-2 bd-highlight" style="width: 18rem;">
-            <img src="" class="card-img-top" alt="" title="">
-            <div class="card-body">
-                <h5 class="name card-title"></h5>
-                <p class="price card-text"></p>
-                <a href="" class="btn btn-primary stretched-link ">View Details</a>
+            <div class="product23 card p-2 bd-highlight" style="width: 18rem;">
+                <img src="" class="card-img-top" alt="" title="">
+                <div class="card-body">
+                    <h5 class="name card-title"></h5>
+                    <p class="price card-text"></p>
+                    <a href="" class="btn btn-primary stretched-link ">View Details</a>
+                </div>
             </div>
-        </div>
-        <div class="product24 card p-2 bd-highlight" style="width: 18rem;">
-            <img src="" class="card-img-top" alt="" title="">
-            <div class="card-body">
-                <h5 class="name card-title"></h5>
-                <p class="price card-text"></p>
-                <a href="" class="btn btn-primary stretched-link ">View Details</a>
+            <div class="product24 card p-2 bd-highlight" style="width: 18rem;">
+                <img src="" class="card-img-top" alt="" title="">
+                <div class="card-body">
+                    <h5 class="name card-title"></h5>
+                    <p class="price card-text"></p>
+                    <a href="" class="btn btn-primary stretched-link ">View Details</a>
+                </div>
             </div>
-        </div>
-    </section>
-    <section class=" d-flex flex-row bd-highlight mb-3 align-content-stretch row9">
-        <div class=" product25 card p-2 bd-highlight" style="width: 18rem;">
-            <img src="" class="card-img-top" alt="" title="">
-            <div class="card-body">
-                <h5 class="name card-title"></h5>
-                <p class="price card-text"></p>
-                <a href="" class="btn btn-primary stretched-link ">View Details</a>
+        </section>
+            <section class=" d-flex flex-row bd-highlight mb-3 align-content-stretch row9">
+                <div class=" product25 card p-2 bd-highlight" style="width: 18rem;">
+                    <img src="" class="card-img-top" alt="" title="">
+                    <div class="card-body">
+                        <h5 class="name card-title"></h5>
+                        <p class="price card-text"></p>
+                        <a href="" class="btn btn-primary stretched-link ">View Details</a>
+                    </div>
+                </div>
+            <div class=" product26 card p-2 bd-highlight" style="width: 18rem;">
+                <img src="" class="card-img-top" alt="" title="">
+                <div class="card-body">
+                    <h5 class="name card-title"></h5>
+                    <p class="price card-text"></p>
+                    <a href="" class="btn btn-primary stretched-link ">View Details</a>
+                </div>
             </div>
-        </div>
-        <div class=" product26 card p-2 bd-highlight" style="width: 18rem;">
-            <img src="" class="card-img-top" alt="" title="">
-            <div class="card-body">
-                <h5 class="name card-title"></h5>
-                <p class="price card-text"></p>
-                <a href="" class="btn btn-primary stretched-link ">View Details</a>
+            <div class="product27 card p-2 bd-highlight" style="width: 18rem;">
+                <img src="" class="card-img-top" alt="" title="">
+                <div class="card-body">
+                    <h5 class="name card-title"></h5>
+                    <p class="price card-text"></p>
+                    <a href="" class="btn btn-primary stretched-link ">View Details</a>
+                </div>
             </div>
-        </div>
-        <div class="product27 card p-2 bd-highlight" style="width: 18rem;">
-            <img src="" class="card-img-top" alt="" title="">
-            <div class="card-body">
-                <h5 class="name card-title"></h5>
-                <p class="price card-text"></p>
-                <a href="" class="btn btn-primary stretched-link ">View Details</a>
-            </div>
-        </div>
-    </section>
+        </section>
     </div>
+
+
+
     <footer>
         <div class="back-to-top d- flex justify-content-end text">
             <a role="button" class="btn btn-light btn-color2 position-fixed toTop" href="#top">Back to top</a>

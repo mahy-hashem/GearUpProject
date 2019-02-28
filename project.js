@@ -24,9 +24,6 @@ function showCards(productArr) {
     }
 }
 
-/* Use only the functions below*/
-
-
 //Filters by category (as they are in the products.js file)
 function filterCategory(products, category) {
     var filteredItems = []
@@ -52,7 +49,7 @@ function showAll(products) {
     showCards(items);
 }
 
-//Search really
+//Search 
 function search(products, key) {
     var filteredItems = []
     var lowKey = key.toLowerCase();
@@ -66,36 +63,42 @@ function search(products, key) {
     showCards(filteredItems);
 }
 
-function listIncludes(list, str){
-    for(var i=0; i<list.length; i++){
-        if($(list[i]).hasClass(str))
-            return true; 
+$(".search-form").on("submit", function (s) {
+    s.preventDefault();
+    var searchQuery = $("#search").val();
+    search(products, searchQuery);
+})
+
+//Constructing the filtering dropdown menu
+function listIncludes(list, str) {
+    for (var i = 0; i < list.length; i++) {
+        if ($(list[i]).hasClass(str))
+            return true;
     }
     return false;
 }
 
-//Constructing the filtering dropdown menu
 function createFilteringMenu(products) {
-    var button, category;
+    var button, category; 
     var buttons = [];
     for (var i = 0; i < products.length; i++) {
-        var types = []
+        var types = [] 
         for (var j = 0; j < products[i].length; j++) {
             category = products[i][j].category;
-            if (!listIncludes(types, category)) {
-                button = document.createElement("button");
-                $(button).addClass("dropdown-item");
-                $(button).addClass(category);
-                $(button).text(category);
-                types.push(button);
+            
+            if (!listIncludes(types, category)) { 
+                button = document.createElement("button"); 
+                $(button).addClass("dropdown-item" + " " + category); 
+                $(button).text(category); 
+                types.push(button); 
             }
-        }
+        } 
         buttons.push(types);
     }
+    
     productsString.forEach(function(e){
         var header = document.createElement("h6");
-        $(header).addClass("dropdown-header");
-        $(header).addClass("dropdown-title-"+e);
+        $(header).addClass("dropdown-header" + " " + "dropdown-title-" + e);
         $(header).text(e);
         $(header).css("text-transform","capitalize");
         $(".filter .dropdown-menu").append(header);           
@@ -103,38 +106,22 @@ function createFilteringMenu(products) {
 
     for(var i =0; i<buttons.length; i++){
         buttons[i].forEach(function (button) {
-            $(".dropdown-title-"+productsString[i]).append(button);
-            button.addEventListener('click', function () {
+            $(".filter .dropdown-title-"+productsString[i]).append(button);
+            $(button).on('click', function () {
                 filterCategory(products, $(button).text());
             });
         })
-    }
-    buttons.forEach(function (type) {   
-        
-    });
+    }   
 }
 
-//Listeners & Filters
-/*$(".dropdown-bags").on("click", function (e) {
-    filterType(products, "bags")
-});*/
-
-// Back to top event
+// Back to top button event
 $(window).scroll(function(){
     if($(window).scrollTop()> 300){
          $(".toTop").fadeIn(200);
-    }else if($(window).scrollTop()<=300){
+    }else{
         $(".toTop").fadeOut(100);
     }
 });
-
-
-
-$(".search-form").on("submit", function (s) {
-    s.preventDefault();
-    var searchQuery = $("#search").val();
-    search(products, searchQuery);
-})
 
 // Page load
 showAll(products);
@@ -142,10 +129,9 @@ createFilteringMenu(products);
 
 // Navbar links
 
-
 $(".nav-allItems").click(function() {
     showAll(products)
-    
+  
 })
 
 $(".nav-bags").click(function() {
