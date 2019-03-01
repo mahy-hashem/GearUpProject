@@ -126,6 +126,19 @@ $(window).scroll(function(){
 // Page load
 showAll(products);
 createFilteringMenu(products);
+window.onload = function(){
+    var button = document.getElementById('login');
+    button.click();
+}
+
+$("#save-login").click(function() {
+    var username = $("#text-login").val();
+    if(username!="")
+    {
+        $("#navbarDropdown").text("Hi " + username);
+    }
+    $('#exampleModal').modal('toggle');
+})
 
 // Navbar links
 
