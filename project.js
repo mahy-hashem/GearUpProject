@@ -131,11 +131,21 @@ window.onload = function(){
     button.click();
 }
 
+// Login
 $("#save-login").click(function() {
     var username = $("#text-login").val();
     if(username!="")
     {
-        $("#navbarDropdown").text("Hi " + username);
+        $("#navbarDropdown").text("Hi, " + username);
+    }
+    $('#exampleModal').modal('toggle');
+})
+
+$(".username-form").on("submit", function (s) {
+    s.preventDefault();
+    var username = $("#text-login").val();
+    if (username != "") {
+        $("#navbarDropdown").text("Hi, " + username);
     }
     $('#exampleModal').modal('toggle');
 })
